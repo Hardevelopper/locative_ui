@@ -192,181 +192,251 @@
         <div class="container-fluid p-0 sm_padding_15px">
             <div class="row justify-content-center">
 
-                <!-- Wizard form  -->
-                <div class="wizard-container">
-                    <div class="card-header">Chauffeur</div>
-                    <div class="card wizard-card" data-color="azzure" id="wizard">
-                                <form action="" method="POST">
-                                <!-- You can switch ' data-color="azzure" '  with one of the next bright colors: "blue", "green", "orange", "red"          -->
-            
-                                    <div class="wizard-header">
-                                        <h3>
-                                           <small>Tous les champs sont obligatoire</small>
-                                        </h3>
+                <!--start form  -->
+                <div class="col-lg-12">
+                    <div class="white_card card_height_100 mb_30">
+                        <div class="white_card_header">
+                            <div class="box_header m-0">
+                                <div class="main-title">
+                                    <h3 class="m-0">Client</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="white_card_body">
+                            <div class="card-body">
+                                <form action="" method="">
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="code">Code</label>
+                                            <input type="text" class="form-control" id="code" placeholder="Saisissez le code">
+                                        </div>
+                                        <div class=" col-md-6">
+                                            <label class="form-label">Rémunération</label>
+                                            <select id="pays" class="form-control">
+                                                <option selected disabled>Sélectionnez la Rémunération</option>
+                                                <option value="">Mobil money</option>
+                                                <option value="">virement</option>
+                                                <option value="">espece </option>
+                                            </select>
+                                        </div>
                                     </div>
-                                    <div class="wizard-navigation">
-                                        <ul>
-                                            <li><a href="#step_1" data-toggle="tab">1</a></li>
-                                            <li><a href="#step_2" data-toggle="tab">2</a></li>
-                                            <li><a href="#step_3" data-toggle="tab">3</a></li>
-                                            <li><a href="#step_4" data-toggle="tab">4</a></li>
-                                        </ul>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="nom">Nom</label>
+                                            <input type="text" class="form-control" id="nom" placeholder="Saisissez le nom">
+                                        </div>
+                                        <div class=" col-md-6">
+                                            <label class="form-label">Sexe</label>
+                                            <select id="pays" class="form-control">
+                                                <option selected disabled>Sélectionnez le sexe</option>
+                                                <option value="">Homme</option>
+                                                <option value="">Femme</option>
+                                                <option value="">Autre</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                    <div class="tab-content">
-                                        <div class="tab-pane" id="step_1">
-                                          <div class="row">
-                                                <!-- 
-                                                <div class="col-sm-12">
-                                                    <h4 class="info-text"> text ...</h4>
-                                                </div>
-                                                -->
-                                            <div class="col-sm-5">
-                                                <div class="form-group">
-                                                    <label for="code" class="control-label mb-1">Code</label>
-                                                    <input id="code" name="code" type="text" class="form-control" aria-required="true" aria-invalid="false" placeholder="Saisissez le code">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="nom" class="control-label mb-1">Nom</label>
-                                                    <input id="nom" name="nom" type="text" class="form-control" aria-required="true" aria-invalid="false" placeholder="Saisissez votre nom">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="prenom" class="control-label mb-1">Prénom</label>
-                                                    <input id="prenom" name="prenom" type="text" class="form-control" aria-required="true" aria-invalid="false" placeholder="Saisissez votre prenom">
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-5 ">
-                                                <div class="form-group">
-                                                    <label for="num_tel" class="control-label mb-1">Numero téléphone</label>
-                                                    <input id="num_tel" name="num_tel" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-control" aria-required="true" aria-invalid="false" placeholder="Saisissez le numero de téléphone">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="adresse" class="control-label mb-1">Adresse</label>
-                                                    <input id="adresse" name="adresse" type="text" class="form-control" aria-required="true" aria-invalid="false" placeholder="Saisissez l'adresse">
-                                                </div>
-                                            </div>
-                                          </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="prenom">Prenom</label>
+                                            <input type="tel" class="form-control" id="prenom" placeholder="Saisissez le prenom">
                                         </div>
-                                        <div class="tab-pane" id="step_2">
-                                            <div class="row">
-                                                  <!-- 
-                                                  <div class="col-sm-12">
-                                                      <h4 class="info-text"> text ...</h4>
-                                                  </div>
-                                                  -->
-                                              <div class="col-sm-5">
-                                                <div class="form-group">
-                                                    <label for="location" class="control-label mb-1">Sexe</label>
-                                                    <select name="" id="location"  class="form-control">
-                                                        <option value="0" >Selectonnez votre sexe</option>
-                                                        <option value="1">Homme</option>
-                                                        <option value="2">Femme</option> 
-                                                    </select>                                                          
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="date" class="control-label mb-1">Date de naissance</label>
-                                                    <input id="date" name="date" type="date" class="form-control" aria-required="true" aria-invalid="false" placeholder="Saisissez votre date de naossance">
-                                                </div>
-                                              </div>
-                                              <div class="col-sm-5 ">
-                                                <div class="form-group">
-                                                    <label for="email" class="control-label mb-1">Email</label>
-                                                    <input id="email" name="email" type="email" class="form-control" aria-required="true" aria-invalid="false" placeholder="Saisissez l'email">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="action" class="control-label mb-1">Action</label>
-                                                    <input id="action" name="action" type="text" class="form-control" aria-required="true" aria-invalid="false" placeholder="">
-                                                </div>
-                                              </div>
-                                            </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="date">date de naissance</label>
+                                            <input type="date" class="form-control" id="date" placeholder="Saisissez la date">
                                         </div>
-                                        <div class="tab-pane" id="step_3">
-                                            <div class="row">
-                                                  <!-- 
-                                                  <div class="col-sm-12">
-                                                      <h4 class="info-text"> text ...</h4>
-                                                  </div>
-                                                  -->
-                                              <div class="col-sm-5">
-                                                <div class="form-group">
-                                                    <label for="location" class="control-label mb-1">Pays</label>
-                                                    <select name="" id="location"  class="form-control">
-                                                        <option value="0" >Selectionnez le pays</option>
-                                                        <option value="1" >Congo</option>
-                                                        <option value="2">Côte d'ivoire</option>
-                                                        <option value="3">Sud afrique</option> 
-                                                    </select>                                                          
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="location" class="control-label mb-1">Ville</label>
-                                                    <select name="" id="location"  class="form-control">
-                                                        <option value="0" >Selectionnez la ville</option>
-                                                        <option value="1" >Congo</option>
-                                                        <option value="2">Côte d'ivoire</option>
-                                                        <option value="3">Sud afrique</option> 
-                                                    </select>                                                          
-                                                </div>
-                                              </div>
-                                              <div class="col-sm-5 ">
-                                                <div class="form-group">
-                                                    <label for="quartier" class="control-label mb-1">Quartier</label>
-                                                    <input id="quartier" name="quartier" type="text" class="form-control" aria-required="true" aria-invalid="false" placeholder="Saisissez le quartier">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="location" class="control-label mb-1">Rémunération</label>
-                                                    <select name="" id="location"  class="form-control">
-                                                        <option value="0" >Selectionnez la rémunération</option>
-                                                        <option value="1" >Option 1</option>
-                                                        <option value="2">Option 2</option>
-                                                        <option value="3">Autres</option> 
-                                                    </select>                                                          
-                                                </div>
-                                              </div>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane" id="step_4">
-                                            <div class="row">
-                                                  <!-- 
-                                                  <div class="col-sm-12">
-                                                      <h4 class="info-text"> text ...</h4>
-                                                  </div>
-                                                  -->
-                                                  <div class="col-sm-5 ">
-                                                    <div class="form-group">
-                                                        <label for="societe" class="control-label mb-1">Société</label>
-                                                        <input id="societe" name="societe" type="text" class="form-control" aria-required="true" aria-invalid="false" placeholder="Saisissez le nom de la société">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label for="gerant" class="control-label mb-1">Gérant</label>
-                                                        <input id="gerant" name="gerant" type="text" class="form-control" aria-required="true" aria-invalid="false" placeholder="Saisissez le nom du gérant">
-                                                    </div>
-                                                  </div>    
-                                                  <div class="col-sm-5 ">
-                                                    <div class="form-group">
-                                                        <label for="note" class="control-label mb-1">Note</label>
-                                                        <input id="note" name="note" type="text" class="form-control" aria-required="true" aria-invalid="false" placeholder="Saisissez la note">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label for="url" class="control-label mb-1">Importer</label>
-                                                        <input id="url" name="url" type="file" class="form-control bg-secondary text-white" aria-required="true" aria-invalid="false" placeholder="Saisissez l'url">
-                                                    </div>
-                                                  </div>                                                  
-                                            </div>
-                                          </div>
                                     </div>
-                                    <div class="wizard-footer">
-                                        <div class="pull-right">
-                                            <input type='button'  class='btn btn-next btn-fill btn-info btn-wd btn-sm' value='Suivant' />
-                                            <input type='submit' name='submit' class='btn btn-finish btn-fill btn-info btn-wd btn-sm'  value='Enregistrer' />
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="email">E-mail</label>
+                                            <input type="email" class="form-control" id="email" placeholder="Saisissez l'e-mail">
                                         </div>
-                                        <div class="pull-left">
-                                            <input type='button'  class='btn btn-previous btn-fill btn-default btn-wd btn-sm' value='Retour' />
+                                        <div class=" col-md-6">
+                                            <label class="form-label" for="pays">Pays</label>
+                                            <select id="pays" class="form-control">
+                                                <option selected disabled>Sélectionnez le pays</option>
+                                                <option value="">Cote d'ivoire</option>
+                                                <option value="">RD Congo</option>
+                                                <option value="">Congo brazzaville</option>
+                                                <option value="">Sénégale</option>
+                                            </select>
                                         </div>
-                                        <div class="clearfix"></div>
                                     </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="action">Action</label>
+                                            <input type="text" class="form-control" id="action" placeholder="Saisissez l'action">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="ville">Ville</label>
+                                            <input type="text" class="form-control" id="ville" placeholder="Saisissez la ville">
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="numTel">Numero téléphone</label>
+                                            <input type="tel" class="form-control" id="numTel" placeholder="Saisissez le numéro de téléphone">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="quartier">Quartier</label>
+                                            <input type="text" class="form-control" id="quartier" placeholder="Saisissez le quartier">
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="societe">Société</label>
+                                            <input type="text" class="form-control" id="societe" placeholder="Saisissez la societe">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="note">Note</label>
+                                            <input type="text" class="form-control" id="note" placeholder="Saisissez la note">
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="adresse">Adresse</label>
+                                            <input type="text" class="form-control" id="adresse" placeholder="Saisissez l'adresse">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="importer">Importer</label>
+                                            <input type="file" class="form-control bg-light" id="importer">
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Enregistrer</button>
                                 </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- / Wizard form -->
+                <!-- / end form -->
+
+                <!-- start table -->
+                <div class="col-lg-12">
+                    <div class="white_card card_height_100 mb_30 QA_section">
+                        <div class="white_card_header">
+                            <div class="box_header m-0">
+                                <div class="main-title">
+                                    <h3 class="m-0">Enregistrements</h3>
+                                </div>
+                                <div class="header_more_tool">
+                                    <div class="dropdown">
+                                        <span class="dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                                            <i class="ti-more-alt"></i>
+                                        </span>
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#"> <i class="ti-eye"></i> Action</a>
+                                            <a class="dropdown-item" href="#"> <i class="ti-trash"></i> Supprimer</a>
+                                            <a class="dropdown-item" href="#"> <i class="fas fa-edit"></i> Modifier</a>
+                                            <a class="dropdown-item" href="#"> <i class="ti-printer"></i> Imprimer</a>
+                                            <a class="dropdown-item" href="#"> <i class="fa fa-download"></i> Télécharger</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="white_card_body">
+                            <div class="QA_table table-responsive ">
+                                <table class="table pt-0 table-striped table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Code</th>
+                                            <th scope="col">Société</th>
+                                            <th scope="col">Pays</th>
+                                            <th scope="col">Ville</th>
+                                            <th scope="col">Quartier</th>
+                                            <th scope="col">Numero téléphone</th>
+                                            <th scope="col">Nom</th>
+                                            <th scope="col">Prenom</th>
+                                            <th scope="col">E-mail</th>
+                                            <th scope="col">Action</th>
+                                            <th scope="col">Rémunération</th>
+                                            <th scope="col">Sexe</th>
+                                            <th scope="col">Date</th>
+                                            <th scope="col">Adresse</th>
+                                            <th scope="col">Note</th>
+                                            <th scope="col">Importer</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td  class="nowrap">code</td>
+                                            <td class="nowrap">toto</td>
+                                            <td class="nowrap">congo brazzaville</td>
+                                            <td class="nowrap">brazzaville</td>
+                                            <td class="nowrap">bacongo</td>
+                                            <td class="nowrap">+243 123456789</td>
+                                            <td class="nowrap">gerant</td>
+                                            <td class="nowrap">gerant brazzaville</td>
+                                            <td class="nowrap">abc@gmail.com</td>
+                                            <td class="nowrap">...</td>
+                                            <td class="nowrap">money</td>
+                                            <td class="nowrap">Homme</td>
+                                            <td class="nowrap">25102020</td>
+                                            <td class="nowrap">bacongo rdc</td>
+                                            <td>...</td>
+                                            <td> <button class="btn_1">PDF</button> </td>
+                                            <td class="nowrap">
+                                                 <a href="#"> <i class="fas fa-edit"></i> </a> &nbsp; 
+                                                 <a href="#"> <i class="ti-printer"></i> </a> &nbsp; 
+                                                 <a href="#"> <i class="fa fa-download"></i> </a> &nbsp;
+                                                 <a href="#"> <i class="ti-trash"></i> </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td  class="nowrap">code</td>
+                                            <td class="nowrap">toto1</td>
+                                            <td class="nowrap">senegal</td>
+                                            <td class="nowrap">dakar</td>
+                                            <td class="nowrap">dakari</td>
+                                            <td class="nowrap">+243 123456789</td>
+                                            <td class="nowrap">gerant</td>
+                                            <td class="nowrap">gerant dakar</td>
+                                            <td class="nowrap">abc@gmail.com</td>
+                                            <td class="nowrap">...</td>
+                                            <td class="nowrap">money</td>
+                                            <td class="nowrap">Femme</td>
+                                            <td class="nowrap">25102020</td>
+                                            <td class="nowrap">dakari sgl</td>
+                                            <td>...</td>
+                                            <td> <button class="btn_1">PDF</button> </td>
+                                            <td class="nowrap">
+                                                <a href="#"> <i class="fas fa-edit"></i> </a> &nbsp; 
+                                                <a href="#"> <i class="ti-printer"></i> </a> &nbsp; 
+                                                <a href="#"> <i class="fa fa-download"></i> </a> &nbsp;
+                                                <a href="#"> <i class="ti-trash"></i> </a>
+                                           </td>
+                                        </tr>
+                                        <tr>
+                                            <td  class="nowrap">code</td>
+                                            <td class="nowrap">toto</td>
+                                            <td class="nowrap"> cote d'ivoire</td>
+                                            <td class="nowrap">abidjan</td>
+                                            <td class="nowrap">treichville</td>
+                                            <td class="nowrap">+243 123456789</td>
+                                            <td class="nowrap">gerant</td>
+                                            <td class="nowrap">gerant abidjan</td>
+                                            <td class="nowrap">abc@gmail.com</td>
+                                            <td class="nowrap">...</td>
+                                            <td class="nowrap">money</td>
+                                            <td class="nowrap">Homme</td>
+                                            <td class="nowrap">25102020</td>
+                                            <td class="nowrap">treichville ci</td>
+                                            <td>...</td>
+                                            <td> <button class="btn_1">PDF</button> </td>
+                                            <td class="nowrap">
+                                                <a href="#"> <i class="fas fa-edit"></i> </a> &nbsp; 
+                                                <a href="#"> <i class="ti-printer"></i> </a> &nbsp; 
+                                                <a href="#"> <i class="fa fa-download"></i> </a> &nbsp;
+                                                <a href="#"> <i class="ti-trash"></i> </a>
+                                           </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End table -->
 
                 <!-- starts content
                 <div class="block">
@@ -493,6 +563,7 @@ How can I help you?</P>
 </div>
 <!-- /Go to top -->
 
+
 <script src="js/jquery1-3.4.1.min.js"></script>
 
 <script src="js/popper1.min.js"></script>
@@ -553,6 +624,5 @@ How can I help you?</P>
     <script src="assets/js/jquery.validate.min.js"></script>
     
     <!-- / js form wizard file -->
-
 </body>
 </html>
