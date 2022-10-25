@@ -39,11 +39,6 @@
     <link rel="stylesheet" href="css/style1.css" />
     <link rel="stylesheet" href="css/colors/default.css" id="colorSkinCSS">
 
-    <!--  CSS form wizard Files -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-	<link href="assets/css/gsdk-bootstrap-wizard.css" rel="stylesheet" />
-    <!-- / CSS form wizard Files -->
-
 </head>
 <body>
 
@@ -189,188 +184,45 @@
     </div>
 
     <div class="main_content_iner ">
-        <div class="container-fluid p-0 sm_padding_15px">
+        <div class="container-fluid p-0">
             <div class="row justify-content-center">
 
-                <!--start form  -->
-                <div class="col-lg-12">
+                <!-- form  -->
+
+                <div class="col-lg-6">
                     <div class="white_card card_height_100 mb_30">
                         <div class="white_card_header">
                             <div class="box_header m-0">
                                 <div class="main-title">
-                                    <h3 class="m-0">Service</h3>
+                                    <h3 class="m-0">Créer mot de passe</h3>
                                 </div>
                             </div>
                         </div>
                         <div class="white_card_body">
-                            <div class="card-body">
-                                <form action="" method="">
-                                    <div class="row mb-3">
-                                        <div class="col-md-6">
-                                            <label class="form-label" for="code">Code</label>
-                                            <input type="text" class="form-control" id="code" placeholder="Saisissez le code">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label class="form-label" for="periode">Période</label>
-                                            <input type="date" class="form-control" id="periode" placeholder="Saisissez la date d'aquisition">
-                                        </div>
-                                    </div>
-                                    <div class="row mb-3">
-                                        <div class="col-md-6">
-                                            <label class="form-label" for="service">Service</label>
-                                            <input type="text" class="form-control" id="service" placeholder="Saisissez le service">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label class="form-label" for="date">Date</label>
-                                            <input type="date" class="form-control" id="date" placeholder="Saisissez la date d'aquisition">
-                                        </div>
-                                    </div>
-                                    <div class="row mb-3">
-                                        <div class="col-md-6">
-                                            <label class="form-label" for="prixUni">Prix unitaire</label>
-                                            <input type="text" class="form-control" id="prixUni" placeholder="Saisissez le prix unitaire">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label class="form-label" for="typeServ">Type service</label>
-                                            <input type="text" class="form-control" id="typServ" placeholder="Saisissez le type de service">
-                                        </div>
-                                    </div>
-                                    <div class="row mb-3">
-                                        <div class="col-md-6">
-                                            <label class="form-label" for="quantite">Quantité</label>
-                                            <input type="text" class="form-control" id="quantite" placeholder="Saisissez la quantite">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label class="form-label" for="caisse">Caisse</label>
-                                            <input type="text" class="form-control" id="caisse" placeholder="Saisissez la caisse">
-                                        </div>
-                                    </div>
-                                    <div class="row mb-3">
-                                        <div class="col-md-6">
-                                            <label class="form-label" for="societe">Société</label>
-                                            <input type="text" class="form-control" id="societe" placeholder="Saisissez la societe">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label class="form-label" for="note">Note</label>
-                                            <input type="text" class="form-control" id="note" placeholder="Saisissez la note">
-                                        </div>
-                                    </div>
-                                    <div class="row mb-3">
-                                        <div class="col-md-6">
-                                            <label class="form-label" for="gerant">Gérant</label>
-                                            <input type="text" class="form-control" id="gerant" placeholder="Saisissez le gérant">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label class="form-label" for="importer">Importer</label>
-                                            <input type="file" class="form-control bg-light" id="importer">
-                                        </div>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Enregistrer</button>
-                                </form>
+                            <form>
+                            <div class="mb-3">
+                                <label class="form-label" for="code">Code</label>
+                                <input type="text" name="" class="form-control" id="code" placeholder="Saisissez le code">
                             </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="mdp">Mot de passe actuel</label>
+                                <input type="password" name="" class="form-control" id="mdp" placeholder="Saisissez le mot de passe actuel">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="nMdp">Nouveau mot de passe</label>
+                                <input type="password" name="" class="form-control" id="nMdp" placeholder="Saisissez le nouveau mot de passe">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="cMdp">Confirmer mot de passe</label>
+                                <input type="password" name="" class="form-control" id="cMdp" placeholder="Confirmer le nouveau mot de passe actuel">
+                            </div>
+                            <button type="submit" name="" class="btn btn-primary">Enregistrer</button>
+                            </form>
                         </div>
                     </div>
                 </div>
-                <!-- / end form -->
-
-                <!-- start table -->
-                <div class="col-lg-12">
-                    <div class="white_card card_height_100 mb_30 QA_section">
-                        <div class="white_card_header">
-                            <div class="box_header m-0">
-                                <div class="main-title">
-                                    <h3 class="m-0">Enregistrements</h3>
-                                </div>
-                                <div class="header_more_tool">
-                                    <a class="btn btn-primary" href="#"> <i class="ti-printer"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="white_card_body">
-                            <div class="QA_table table-responsive ">
-                                <table class="table pt-0 table-striped table-bordered">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">Code</th>
-                                            <th scope="col">Société</th>
-                                            <th scope="col">Gérant</th>
-                                            <th scope="col">Service</th>
-                                            <th scope="col">Quantite</th>
-                                            <th scope="col">Prix unitaire</th>
-                                            <th scope="col">Période</th>
-                                            <th scope="col">Date</th>
-                                            <th scope="col">Type service</th>
-                                            <th scope="col">Caisse</th>
-                                            <th scope="col">Note</th>
-                                            <th scope="col">Importer</th>
-                                            <th scope="col">Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td  class="nowrap">code</td>
-                                            <td class="nowrap">toto</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td> <button class="btn_1">PDF</button> </td>
-                                            <td class="nowrap">
-                                                 <a href="#"> <i class="fas fa-edit"></i> </a> &nbsp;
-                                                 <a href="#"> <i class="ti-trash"></i> </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td  class="nowrap">code</td>
-                                            <td class="nowrap">toto</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td> <button class="btn_1">PDF</button> </td>
-                                            <td class="nowrap">
-                                                 <a href="#"> <i class="fas fa-edit"></i> </a> &nbsp;
-                                                 <a href="#"> <i class="ti-trash"></i> </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td  class="nowrap">code</td>
-                                            <td class="nowrap">toto</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td> <button class="btn_1">PDF</button> </td>
-                                            <td class="nowrap">
-                                                 <a href="#"> <i class="fas fa-edit"></i> </a> &nbsp;
-                                                 <a href="#"> <i class="ti-trash"></i> </a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End table -->
+                
+                <!-- / form -->
 
                 <!-- starts content 
                 <div class="block">
@@ -544,20 +396,5 @@ How can I help you?</P>
 <script src="vendors/chart_am/chart-custom.js"></script>
 
 <script src="js/custom.js"></script>
-
-    <!-- js form wizard file -->
-
-    <!--   Core JS Files   -->
-    <script src="assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
-    <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="assets/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
-    
-    <!--  Plugin for the Wizard -->
-    <script src="assets/js/gsdk-bootstrap-wizard.js"></script>
-    
-    <!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
-    <script src="assets/js/jquery.validate.min.js"></script>
-    
-    <!-- / js form wizard file -->
 </body>
 </html>
