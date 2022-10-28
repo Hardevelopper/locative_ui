@@ -187,65 +187,77 @@
         <div class="container-fluid p-0">
             <div class="row justify-content-center">
 
-                <!-- menu onglets  -->
-
-                <div class="col-lg-12">
-                    <div class="white_card card_height_100 mb_30">
-                        <div class="white_card_header">
-                            <div class="box_header m-0">
-                                <div class="main-title">
-                                    <h3 class="m-0 text-bold">Gestion</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="white_card_body">
-                            <div class="btn-group">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Véhicule
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="type-vehicule.html">Type véhicule</a>
-                                    <a class="dropdown-item" href="type-energie.html">Type énergie</a>
-                                    <a class="dropdown-item" href="boite-vitesse.html">Boîte vitesse</a>
-                                    <a class="dropdown-item" href="doc-vehicule.html">Documents véhicule</a>
-                                    <a class="dropdown-item" href="vehicule.html">Véhicule</a>
-                                </div>
-                            </div>
-                            <div class="btn-group">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Entretien
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="menu-piece.html">Pièce</a>
-                                    <a class="dropdown-item" href="menu-fourniture.html">Fourniture</a>
-                                    <a class="dropdown-item" href="menu-service.html">Services</a>
-                                    <a class="dropdown-item" href="menu-entretien.html">Entretein</a>
-                                </div>
-                            </div>
-                            <div class="btn-group">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Location
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="tarification.html">Tarification</a>
-                                    <a class="dropdown-item" href="validation.html">Validation</a>
-                                    <a class="dropdown-item" href="reservation.html">Réservation</a>
-                                    <a class="dropdown-item" href="Location.html">Location</a>
-                                </div>
-                            </div>
-                            <div class="btn-group">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Caisse
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="type-mouvement.html">Type mouvement</a>
-                                    <a class="dropdown-item" href="caisse.html">Caisse</a>
-                                </div>
+               <!--start form  -->
+               <div class="col-lg-12">
+                <div class="white_card card_height_100 mb_30">
+                    <div class="white_card_header">
+                        <div class="box_header m-0">
+                            <div class="main-title">
+                                <h3 class="m-0">Documents vehicule</h3>
                             </div>
                         </div>
                     </div>
+                    <div class="white_card_body">
+                        <div class="card-body">
+                            <form action="" method="">
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="code">Code</label>
+                                        <input type="text" class="form-control" id="code" placeholder="Saisissez le code">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="datePkm">Date etablissement</label>
+                                        <input type="date" class="form-control" id="datePkm" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="nomDoc">Nom du document</label>
+                                        <input type="text" class="form-control" id="nomDoc" placeholder="Saisissez le document">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="dateValid">Date validation</label>
+                                        <input type="date" class="form-control" id="dateValid" placeholder="Saisissez la date de validation">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="valeur">Valeur</label>
+                                        <input type="text" class="form-control" id="puissance" placeholder="Saisissez la valeur">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="dateFin">Date Fin</label>
+                                        <input type="date" class="form-control" id="dateFin" placeholder="Saisissez la date fin">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="societe">Société</label>
+                                        <input type="text" class="form-control bg-light" id="societe" placeholder="Saisissez la societe">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="vehicule">Vehicule</label>
+                                        <input type="text" class="form-control bg-light" id="typeEner" placeholder="Saisissez le vehicule">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="gerant">Gérant</label>
+                                        <input type="text" class="form-control bg-light" id="gerant" placeholder="Saisissez le gérant">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="importer">Importer</label>
+                                        <input type="file" class="form-control bg-light" id="importer">
+                                    </div>
+                                </div>
+                            
+                                <button type="submit" class="btn btn-primary">Enregistrer</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <!-- / menu onglets -->
+            </div>
+            <!-- / end form -->
 
                 <!-- starts content 
                 <div class="block">

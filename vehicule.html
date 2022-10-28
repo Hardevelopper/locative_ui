@@ -212,8 +212,8 @@
                                             <input type="text" class="form-control" id="code" placeholder="Saisissez le code">
                                         </div>
                                         <div class="col-md-6">
-                                            <label class="form-label" for="dateAqui">Date d'aquisition</label>
-                                            <input type="date" class="form-control" id="dateAqui" placeholder="Saisissez la date d'aquisition">
+                                            <label class="form-label" for="datePkm">Date du prochain kilométrage</label>
+                                            <input type="date" class="form-control" id="datePkm" placeholder="Saisissez la date du prochain kilométrage">
                                         </div>
                                     </div>
                                     <div class="row mb-3">
@@ -222,8 +222,8 @@
                                             <input type="text" class="form-control" id="vehicule" placeholder="Saisissez le Véhicule">
                                         </div>
                                         <div class="col-md-6">
-                                            <label class="form-label" for="dateCess">Date cession</label>
-                                            <input type="date" class="form-control" id="dateCess" placeholder="Saisissez la date d'aquisition">
+                                            <label class="form-label" for="dateAqui">Date d'aquisition</label>
+                                            <input type="date" class="form-control" id="dateAqui" placeholder="Saisissez la date d'aquisition">
                                         </div>
                                     </div>
                                     <div class="row mb-3">
@@ -232,8 +232,8 @@
                                             <input type="text" class="form-control" id="puissance" placeholder="Saisissez la puissance">
                                         </div>
                                         <div class="col-md-6">
-                                            <label class="form-label" for="typeVehi">Type de véhicule</label>
-                                            <input type="text" class="form-control" id="typeVehi" placeholder="Saisissez le type de véhicule">
+                                            <label class="form-label" for="dateCess">Date cession</label>
+                                            <input type="date" class="form-control" id="dateCess" placeholder="Saisissez la date d'aquisition">
                                         </div>
                                     </div>
                                     <div class="row mb-3">
@@ -242,8 +242,8 @@
                                             <input type="text" class="form-control" id="boite" placeholder="Saisissez la boite de vitesse">
                                         </div>
                                         <div class="col-md-6">
-                                            <label class="form-label" for="typeEner">Type d'energie</label>
-                                            <input type="text" class="form-control" id="typeEner" placeholder="Saisissez le type d'energie">
+                                            <label class="form-label" for="typeVehi">Type de véhicule</label>
+                                            <input type="text" class="form-control" id="typeVehi" placeholder="Saisissez le type de véhicule">
                                         </div>
                                     </div>
                                     <div class="row mb-3">
@@ -252,8 +252,8 @@
                                             <input type="text" class="form-control" id="societe" placeholder="Saisissez la societe">
                                         </div>
                                         <div class="col-md-6">
-                                            <label class="form-label" for="note">Note</label>
-                                            <input type="text" class="form-control" id="note" placeholder="Saisissez la note">
+                                            <label class="form-label" for="typeEner">Type d'energie</label>
+                                            <input type="text" class="form-control" id="typeEner" placeholder="Saisissez le type d'energie">
                                         </div>
                                     </div>
                                     <div class="row mb-3">
@@ -262,8 +262,24 @@
                                             <input type="text" class="form-control" id="gerant" placeholder="Saisissez le gérant">
                                         </div>
                                         <div class="col-md-6">
+                                            <label class="form-label" for="note">Note</label>
+                                            <input type="text" class="form-control" id="note" placeholder="Saisissez la note">
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="prixJour">Prix journalier</label>
+                                            <input type="text" class="form-control" id="prixJour" placeholder="Saisissez le prix journalier">
+                                        </div>
+                                        <div class="col-md-6">
                                             <label class="form-label" for="importer">Importer</label>
                                             <input type="file" class="form-control bg-light" id="importer">
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="dkm">Date du dernier kilométrage</label>
+                                            <input type="date" class="form-control" id="dkm" placeholder="Saisissez la date du dernier kilométrage">
                                         </div>
                                     </div>
                                     <button type="submit" class="btn btn-primary">Enregistrer</button>
@@ -298,8 +314,11 @@
                                             <th scope="col">Véhicule</th>
                                             <th scope="col">Puissance</th>
                                             <th scope="col">Boite vitesse</th>
+                                            <th scope="col">Prix journalier</th>
                                             <th scope="col">Date d'aquisition</th>
                                             <th scope="col">Date cession</th>
+                                            <th scope="col">Date du dernier kilométrage</th>
+                                            <th scope="col">Date du prochain kilométrage</th>
                                             <th scope="col">Type de véhicule</th>
                                             <th scope="col">Type énergie</th>
                                             <th scope="col">Note</th>
@@ -317,6 +336,9 @@
                                             <td class="nowrap">bacongo</td>
                                             <td class="nowrap">25102020</td>
                                             <td class="nowrap">25102020</td>
+                                            <td class="nowrap">25102020</td>
+                                            <td class="nowrap">...</td>
+                                            <td class="nowrap">...</td>
                                             <td class="nowrap">bacongo rdc</td>
                                             <td class="nowrap">...</td>
                                             <td class="nowrap">...</td>
@@ -335,6 +357,9 @@
                                             <td class="nowrap">bacongo</td>
                                             <td class="nowrap">25102020</td>
                                             <td class="nowrap">25102020</td>
+                                            <td class="nowrap">25102020</td>
+                                            <td class="nowrap">...</td>
+                                            <td class="nowrap">...</td>
                                             <td class="nowrap">bacongo rdc</td>
                                             <td class="nowrap">...</td>
                                             <td class="nowrap">...</td>
@@ -353,6 +378,9 @@
                                             <td class="nowrap">bacongo</td>
                                             <td class="nowrap">25102020</td>
                                             <td class="nowrap">25102020</td>
+                                            <td class="nowrap">25102020</td>
+                                            <td class="nowrap">...</td>
+                                            <td class="nowrap">...</td>
                                             <td class="nowrap">bacongo rdc</td>
                                             <td class="nowrap">...</td>
                                             <td class="nowrap">...</td>
