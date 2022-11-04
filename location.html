@@ -256,8 +256,8 @@
                                             <input type="text" class="form-control" id="chauffeur" placeholder="Saisissez le chauffeur">
                                         </div>
                                         <div class="col-md-6">
-                                            <label class="form-label" for="prixTotal">Prix total</label>
-                                            <input type="text" class="form-control" id="prixTotal" placeholder="Saisissez le prix total">
+                                            <label class="form-label" for="quantite">Quantité</label>
+                                            <input type="text" class="form-control" id="quantite" placeholder="Saisissez la quantite">
                                         </div>
                                     </div>
                                     <div class="row mb-3">
@@ -266,8 +266,8 @@
                                             <input type="text" class="form-control" id="tarif" placeholder="Saisissez le tarif">
                                         </div>
                                         <div class="col-md-6">
-                                            <label class="form-label" for="aPayer">A payer</label>
-                                            <input type="text" class="form-control" id="aPayer" placeholder="Saisissez a payer">
+                                            <label class="form-label" for="prixTotal">Prix total</label>
+                                            <input type="text" class="form-control" id="prixTotal" placeholder="Saisissez le prix total">
                                         </div>
                                     </div>
                                     <div class="row mb-3">
@@ -276,8 +276,8 @@
                                             <input type="text" class="form-control" id="reservation" placeholder="Saisissez la reservation">
                                         </div>
                                         <div class="col-md-6">
-                                            <label class="form-label" for="rPayer">Reste a payer</label>
-                                            <input type="text" class="form-control" id="rPayer" placeholder="Saisissez le reste a payer">
+                                            <label class="form-label" for="aPayer">A payer</label>
+                                            <input type="text" class="form-control" id="aPayer" placeholder="Saisissez a payer">
                                         </div>
                                     </div>
                                     <div class="row mb-3">
@@ -290,8 +290,8 @@
                                             </select>
                                         </div>
                                         <div class="col-md-6">
-                                            <div>Statut réservation</div>
-                                            <input type="checkbox" name="" value=""  data-toggle="toggle">
+                                            <label class="form-label" for="rPayer">Reste a payer</label>
+                                            <input type="text" class="form-control" id="rPayer" placeholder="Saisissez le reste a payer">
                                         </div>
                                     </div>
                                     <div class="row mb-3">
@@ -300,8 +300,8 @@
                                             <input type="text" class="form-control" id="societe" placeholder="Saisissez la societe">
                                         </div>
                                         <div class="col-md-6">
-                                            <div>Statut location</div>
-                                            <input type="checkbox" name="" value="" data-toggle="toggle">
+                                            <div>Statut réservation</div>
+                                            <input type="checkbox" name="" value=""  data-toggle="toggle">
                                         </div>
                                     </div>
                                     <div class="row mb-3">
@@ -310,14 +310,18 @@
                                             <input type="text" class="form-control" id="gerant" placeholder="Saisissez le gérant">
                                         </div>
                                         <div class="col-md-6">
-                                            <label class="form-label" for="importer">Importer</label>
-                                            <input type="file" class="form-control bg-light" id="importer">
+                                            <div>Statut location</div>
+                                            <input type="checkbox" name="" value="" data-toggle="toggle">
                                         </div>
                                     </div>
                                     <div class="row mb-3">
                                         <div class="col-md-6">
                                             <label class="form-label" for="note">Note</label>
                                             <input type="text" class="form-control" id="note" placeholder="Saisissez la note">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="importer">Importer</label>
+                                            <input type="file" class="form-control bg-light" id="importer">
                                         </div>
                                     </div>
                                     <button type="submit" class="btn btn-primary">Enregistrer</button>
@@ -360,6 +364,7 @@
                                             <th scope="col">Date fin</th>
                                             <th scope="col">Nombre  de jours</th>
                                             <th scope="col">PU journalier</th>
+                                            <th scope="col">Quantite</th>
                                             <th scope="col">Prix total</th>
                                             <th scope="col">A payer</th>
                                             <th scope="col">Reste a payer</th>
@@ -392,32 +397,6 @@
                                             <td class="nowrap">...</td>
                                             <td class="nowrap">...</td>
                                             <td class="nowrap">...</td>
-                                            <td> <button class="btn_1">PDF</button> </td>
-                                            <td class="nowrap">
-                                                 <a href="#"> <i class="fas fa-edit"></i> </a> &nbsp;
-                                                 <a href="#"> <i class="ti-trash"></i> </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td  class="nowrap">code</td>
-                                            <td class="nowrap">toto</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
-                                            <td class="nowrap">...</td>
                                             <td class="nowrap">...</td>
                                             <td> <button class="btn_1">PDF</button> </td>
                                             <td class="nowrap">
@@ -428,6 +407,35 @@
                                         <tr>
                                             <td  class="nowrap">code</td>
                                             <td class="nowrap">toto</td>
+                                            <td class="nowrap">...</td>
+                                            <td class="nowrap">...</td>
+                                            <td class="nowrap">...</td>
+                                            <td class="nowrap">...</td>
+                                            <td class="nowrap">...</td>
+                                            <td class="nowrap">...</td>
+                                            <td class="nowrap">...</td>
+                                            <td class="nowrap">...</td>
+                                            <td class="nowrap">...</td>
+                                            <td class="nowrap">...</td>
+                                            <td class="nowrap">...</td>
+                                            <td class="nowrap">...</td>
+                                            <td class="nowrap">...</td>
+                                            <td class="nowrap">...</td>
+                                            <td class="nowrap">...</td>
+                                            <td class="nowrap">...</td>
+                                            <td class="nowrap">...</td>
+                                            <td class="nowrap">...</td>
+                                            <td class="nowrap">...</td>
+                                            <td> <button class="btn_1">PDF</button> </td>
+                                            <td class="nowrap">
+                                                 <a href="#"> <i class="fas fa-edit"></i> </a> &nbsp;
+                                                 <a href="#"> <i class="ti-trash"></i> </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td  class="nowrap">code</td>
+                                            <td class="nowrap">toto</td>
+                                            <td class="nowrap">...</td>
                                             <td class="nowrap">...</td>
                                             <td class="nowrap">...</td>
                                             <td class="nowrap">...</td>
